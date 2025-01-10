@@ -3,7 +3,7 @@
 ## This folder contains the implementation of the codes.
 
 ## Requirements:
-The details of environment such as python package can reference 'environment.txt'.
+The details of environment such as python package can reference 'requirements.txt'.
 
 ## Data:
 It can be downloaded at:
@@ -17,16 +17,14 @@ Baidu Netdisk:
 ## Repository Structure
 ### Below are the main directories in the repository:
 - **DMT_images_processing/**: the data loader and augmentation pipeline
-- **docs/**: figures/GIFs used in the repo
-- **metrics/**: scripts for metric calculation
+- **TB-YOLO/**: figures/GIFs used in the repo
+- **Tumor invasive front detection/**: scripts for metric calculation
 
 ### Below are the main executable scripts in the repository:
-- **config.py**: configuration file
-- **dataset.py**: defines the dataset classes
-- **extract_patches.py**: extracts patches from original images
-- **compute_stats.py**: main metric computation script
-- **run_train.py**: main training script
-- **run_infer.py**: main inference script for tile and WSI processing
-- **convert_chkpt_tf2pytorch**: convert tensorflow .npz model trained in original repository to pytorch supported .tar format
+- **color_decon_test_imgs.py**: configuration file
+- **test.py**: defines the dataset classes
+- **test_wsi.py**: extracts patches from original images
+- **train.py**: main metric computation script
+- **train_else_dataset.py**: main training script
 
 
