@@ -4,3 +4,8 @@
 
 ## Requirements:
 The details of environment such as python package can reference 'environment.txt'.
+
+## Data:
+It can be downloaded at: 
+google drive ：https://drive.google.com/file/d/1VsIzDFIb8Qv7nfMlCDYpFT2C3Bbor5TN/view
+
