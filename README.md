@@ -16,12 +16,9 @@ Baidu Netdisk:
 
 ## Repository Structure
 ### Below are the main directories in the repository:
-- **dataloader/**: the data loader and augmentation pipeline
+- **DMT_images_processing/**: the data loader and augmentation pipeline
 - **docs/**: figures/GIFs used in the repo
 - **metrics/**: scripts for metric calculation
-- **misc/**: utils that are
-- **models/**: model definition, along with the main run step and hyperparameter settings
-- **run_utils/**: defines the train/validation loop and callbacks
 
 ### Below are the main executable scripts in the repository:
 - **config.py**: configuration file
