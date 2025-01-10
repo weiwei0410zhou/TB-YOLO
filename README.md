@@ -41,6 +41,6 @@ runs/detect
 2.calculate related evaluation metircs.
 
 ## Process a large-scale pathology image such as WSI
-run 'quick-block-test.py'
+run 'test_wsi.py'
 
 
