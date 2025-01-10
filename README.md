@@ -13,12 +13,13 @@ Google Drive:
 
 Baidu Netdisk:  
 [https://pan.baidu.com/s/1o3A-uM2VZtpIRGKTwqpZeA?pwd=iraq](https://pan.baidu.com/s/1o3A-uM2VZtpIRGKTwqpZeA?pwd=iraq) 提取码: `iraq`
-
+runs/detect
 ## Repository Structure
 ### Below are the main directories in the repository:
 - **DMT_images_processing/**: the data loader and augmentation pipeline
 - **TB-YOLO/**: figures/GIFs used in the repo
 - **Tumor invasive front detection/**: scripts for metric calculation
+- **runs/detect/**: scripts for metric calculation
 
 ### Below are the main executable scripts in the repository:
 - **color_decon_test_imgs.py**: configuration file
