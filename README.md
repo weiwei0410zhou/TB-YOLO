@@ -43,4 +43,21 @@ runs/detect
 ## Process a large-scale pathology image such as WSI
 run 'test_wsi.py'
 
+## Citation
+@misc{yolo-project-for_dataset,
+  author = {Tumor detection YOLO},
+  title = {Yolo-project-for Dataset},
+  year = {2024},
+  note = {Dataset available at Roboflow Universe, accessed: 2025-01-03},
+  howpublished = {\url{https://universe.roboflow.com/tumor-detection-yolo/yolo-project-for}}
+}
+
+@misc{colon_cancer_new_dataset,
+  author = {school},
+  title = {colon\_cancer\_new Dataset},
+  year = {2023},
+  note = {Dataset available at Roboflow Universe, accessed: 2025-01-03},
+  howpublished = {\url{https://universe.roboflow.com/school-sd6by/colon_cancer_new}}
+}
+
 
