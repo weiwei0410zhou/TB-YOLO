@@ -14,5 +14,5 @@ Google Drive:
 Baidu Netdisk:  
 [https://pan.baidu.com/s/1o3A-uM2VZtpIRGKTwqpZeA?pwd=iraq](https://pan.baidu.com/s/1o3A-uM2VZtpIRGKTwqpZeA?pwd=iraq) 提取码: `iraq`
 
-## Usage of Directories
+## Repository Structure
 
