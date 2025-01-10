@@ -1,0 +1,6 @@
+train: /home/zww/8t_sdc/zww/YOLO_dataset/colon_cancer_new_8154/train
+val: /home/zww/8t_sdc/zww/YOLO_dataset/colon_cancer_new_8154/val
+test: /home/zww/8t_sdc/zww/YOLO_dataset/colon_cancer_new_8154/test
+
+nc: 4
+names: ['0', '1', '2', '3']

@@ -1,0 +1,5 @@
+train: /home/zww/8t_sdc/zww/YOLO_dataset/BCCD_dataset/train
+val: /home/zww/8t_sdc/zww/YOLO_dataset/BCCD_dataset/val
+test: /home/zww/8t_sdc/zww/YOLO_dataset/BCCD_dataset/test
+nc: 3
+names: ['Platelets', 'RBC', 'WBC']

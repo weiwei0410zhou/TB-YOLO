@@ -1,0 +1,6 @@
+train: /home/zww/2t_ssd1_ww/zww/dataset/train
+val: /home/zww/2t_ssd1_ww/zww/dataset/val
+test: /home/zww/2t_ssd1_ww/zww/dataset/test
+nc: 1
+names: ['tumor budding']
+

@@ -1,0 +1,6 @@
+train: /home/zww/8t_sdc/zww/YOLO_dataset/brain_tumor_dataset/train
+val: /home/zww/8t_sdc/zww/YOLO_dataset/brain_tumor_dataset/val
+test: /home/zww/8t_sdc/zww/YOLO_dataset/brain_tumor_dataset/test
+
+nc: 3
+names: ['glioma', 'meningioma', 'pituitary']
