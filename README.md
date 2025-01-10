@@ -22,10 +22,10 @@ runs/detect
 - **runs/detect/**: Stores the results of detection runs, including logs and output files
 
 ### Below are the main executable scripts in the repository:
-- **color_decon_test_imgs.py**: configuration file
-- **test.py**: defines the dataset classes
-- **test_wsi.py**: extracts patches from original images
-- **train.py**: main metric computation script
-- **train_else_dataset.py**: main training script
+- **color_decon_test_imgs.py**: Script for testing color deconvolution on images
+- **test.py**: main testing script
+- **test_wsi.py**: Extracts patches from whole slide images (WSI) for processing
+- **train.py**: main training script
+- **train_else_dataset.py**: main training script for else dataset
 
 
