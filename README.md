@@ -16,6 +16,20 @@ Baidu Netdisk:
 
 ## Repository Structure
 ### Below are the main directories in the repository:
+- **dataloader/**: the data loader and augmentation pipeline
+- **docs/**: figures/GIFs used in the repo
+- **metrics/**: scripts for metric calculation
+- **misc/**: utils that are
+- **models/**: model definition, along with the main run step and hyperparameter settings
+- **run_utils/**: defines the train/validation loop and callbacks
 
 ### Below are the main executable scripts in the repository:
+- **config.py**: configuration file
+- **dataset.py**: defines the dataset classes
+- **extract_patches.py**: extracts patches from original images
+- **compute_stats.py**: main metric computation script
+- **run_train.py**: main training script
+- **run_infer.py**: main inference script for tile and WSI processing
+- **convert_chkpt_tf2pytorch**: convert tensorflow .npz model trained in original repository to pytorch supported .tar format
+
 
