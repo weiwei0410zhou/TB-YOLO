@@ -28,4 +28,19 @@ runs/detect
 - **train.py**: the main training script for the TB-YOLO model
 - **train_else_dataset.py**: main training script for else dataset
 
+## Start to train
+1.set up environment.
+
+2.configure the dataset path and model.yaml file in 'train.py'.
+
+3.run 'train.py'.
+
+## Test model
+1.run 'test.py' to generate prediction results.
+
+2.calculate related evaluation metircs.
+
+## Process a large-scale pathology image such as WSI
+run 'quick-block-test.py'
+
 
