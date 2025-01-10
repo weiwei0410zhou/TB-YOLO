@@ -16,10 +16,10 @@ Baidu Netdisk:
 runs/detect
 ## Repository Structure
 ### Below are the main directories in the repository:
-- **DMT_images_processing/**: the data loader and augmentation pipeline
-- **TB-YOLO/**: figures/GIFs used in the repo
-- **Tumor invasive front detection/**: scripts for metric calculation
-- **runs/detect/**: scripts for metric calculation
+- **DMT_images_processing/**: The DMT method integrates deconvolution, morphological processing, and thresholding to enhance tumor budding detection
+- **TB-YOLO/**: Contains the main code for the TB-YOLO model, including training and inference scripts
+- **Tumor invasive front detection/**: Scripts for detecting the invasive front of tumors and calculating relevant metrics
+- **runs/detect/**: Stores the results of detection runs, including logs and output files
 
 ### Below are the main executable scripts in the repository:
 - **color_decon_test_imgs.py**: configuration file
