@@ -23,6 +23,7 @@ runs/detect
 
 ### Below are the main executable scripts in the repository:
 - **color_decon_test_imgs.py**: script for testing color deconvolution on images
+- **color_decon_test_imgs_index.py**： script for testing color deconvolution index on images
 - **test.py**: the main testing script for the TB-YOLO model
 - **test_wsi.py**: directly tests a whole slide image (WSI) by processing it and extracting relevant patches
 - **train.py**: the main training script for the TB-YOLO model
