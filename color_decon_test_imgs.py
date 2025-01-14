@@ -50,7 +50,7 @@ def generate_mask(hematoxylin_image):
             cv2.drawContours(mask, [contour], -1, 0, -1)
     mask2 = binary_fill_holes(mask // 255).astype(np.uint8) * 255
 
-    kernel_erode = np.ones((13, 13), np.uint8)  # Adjust kernel size as needed
+    kernel_erode = np.ones((3, 3), np.uint8)  # Adjust kernel size as needed
     HE_mask = cv2.erode(mask, kernel_erode, iterations=1)
     #mask = binary_fill_holes(mask // 255).astype(np.uint8) * 255
     HE_mask = binary_fill_holes(HE_mask // 255).astype(np.uint8) * 255
@@ -110,7 +110,7 @@ def draw_bounding_boxes(image, mask, color=(0, 0, 255), thickness=2):
     return image_with_boxes
 
 # Paths
-input_dir = r"C:\Users\admin\Desktop\label\images"  # 输入图片文件夹路径
+input_dir = r"C:\Users\admin\Desktop\label\imgs_cutting\2022-11-01 10.56.48_76080,13803\images"  # 输入图片文件夹路径
 output_dir = "C:/Users/admin/Desktop/tumor_nucleus.py/IHC_test_output/color_decon_output_worst_imgs"
 
 imgs_dir = os.path.join(output_dir, "imgs")
@@ -140,7 +140,7 @@ files_dir = [f for f in os.listdir(input_dir) if f.lower().endswith('.png')]
 for file_name in files_dir:
     img_path = os.path.join(input_dir, file_name)
     img = cv2.imread(img_path)
-    intensity = 11  # 可以根据需要调整这个值
+    intensity = 1.5  # 可以根据需要调整这个值
     hematoxylin_image, DAB_image = color_deconvolution(img, intensity=intensity)
     mask, dilate_mask, HE_mask = generate_mask(hematoxylin_image)
     DAB_mask = generate_DAB_mask(DAB_image) 
@@ -161,7 +161,7 @@ for file_name in files_dir:
     for contour_a in contours_mask:
     # 第一步：筛选白色轮廓的大小
         contour_area = cv2.contourArea(contour_a)
-        if 2 < contour_area < 18000:
+        if 500 < contour_area < 4090:
             mask_a = np.zeros_like(mask_nuclei)
             cv2.drawContours(mask_a, [contour_a], -1, 255, thickness=cv2.FILLED)
             
@@ -176,7 +176,7 @@ for file_name in files_dir:
             contours_c_mask, _ = cv2.findContours(masked_c, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
             num_black_labels = 0
             for contour_c in contours_c_mask:
-                if 2 < cv2.contourArea(contour_c) < 18000:
+                if 500 < cv2.contourArea(contour_c) < 4090:
                     num_black_labels += 1
             if 1 <= num_black_labels <= 10:
                 cv2.drawContours(result, [contour_a], -1, 255, thickness=cv2.FILLED)
