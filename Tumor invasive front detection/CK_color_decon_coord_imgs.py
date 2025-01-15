@@ -43,7 +43,7 @@ def color_deconvolution(image, base_name):
     eosin = img_as_ubyte(eosin)
     dab = img_as_ubyte(dab)
 
-    return hematoxylin
+    return dab
 
 # 生成mask的函数
 def generate_mask(hematoxylin_image):
@@ -97,8 +97,8 @@ for name in img_dirs:
 
     image_path = os.path.join(thumbnail_dir, name)
     image = cv2.imread(image_path)
-    hematoxylin_image = color_deconvolution(image, base_name)
-    mask, filter_img = generate_mask(hematoxylin_image)
+    dab_image = color_deconvolution(image, base_name)
+    mask, filter_img = generate_mask(dab_image)
     mask_with_contours = overlay_contours(image, mask)
     filter_img_with_contours = overlay_contours(image, filter_img)
     
